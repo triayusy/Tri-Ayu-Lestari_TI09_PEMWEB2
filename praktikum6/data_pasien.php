@@ -2,7 +2,7 @@
 require_once 'koneksi.php';
 $query = "SELECT pasien.*, kelurahan.nama as nama_kelurahan
             FROM pasien
-            LEFT JOIN kelurahan ON pasien.kelurahan_id = kelurahan.id_kelurahan";
+            LEFT JOIN kelurahan ON pasien.kelurahan_id = kelurahan.id";
 $pasiens = $dbh->query($query);
 ?>
 
@@ -17,6 +17,7 @@ $pasiens = $dbh->query($query);
 <body>
     <div class="container">
         <h2>Data Pasien Puskesmas Sukahati</h2>
+        <a href="create.php" class="btn btn-primary">Tambah Data Pasien</a>
         <table class="table table-bordered">
         <tr class="table-warning">
             <th>NO</th>

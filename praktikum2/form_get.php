@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>Form Registrasi Pengguna</h1>
-    <form action="submit_get.php"method="GET">
+    <form method="GET">
         <div>
             <label for="nama_lengkap">Nama Lengkap</label>
             <input type="text"name="nama_lengkap" id="nama_lengkap" required>
