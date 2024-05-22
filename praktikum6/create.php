@@ -75,7 +75,7 @@ $kelurahans = $dbh->query($query);
           <select id="kelurahan" name="kelurahan" class="form-select" required="required">
             <option value="">Pilih Kelurahan</option>
             <?php foreach($kelurahans as $kelurahan){?>
-              <option value="<?= $kelurahan['id_kelurahan'];?>"><?= $kelurahan['nama'];?></option>
+              <option value="<?= $kelurahan['id'];?>"><?= $kelurahan['nama'];?></option>
             <?php }?>
           </select>
         </div>
